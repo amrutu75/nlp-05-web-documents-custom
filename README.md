@@ -52,6 +52,24 @@ The pipeline preserves the original HTML
 and produces a structured CSV dataset
 containing extracted metadata.
 
+For the actual assignment, data is retrived from Booktore website (https://books.toscrape.com/).
+The website (source document) containes information such as:
+- Book title
+- Price
+- Rating
+- Availability
+
+Analytical Questions:
+
+Which rating appears most often?
+What is the average price by rating?
+Which books are the most expensive?
+
+Purpose
+
+  Orchestrate an EVTL pipeline to scrape book data from a web page, validate the HTML structure, extract book titles, prices, and ratings using BeautifulSoup, transform the data into a structured format, and load the results into a CSV file for analysis.
+
+
 ## Approach
 
 The project uses a modular Python pipeline
@@ -63,6 +81,8 @@ The pipeline has four stages:
 - **Validate** - verify that required HTML elements exist.
 - **Transform** - extract text and metadata into a structured dataset.
 - **Load** - save the processed data to a CSV file.
+- **Data Visualization** - such as
+- word cloud of book titles, rating distribution charts, and price analysis graphs enhanced data interpretation by making patterns and trends easier to identify than through tabular data alone.
 
 The example uses Requests for HTTP acquisition,
 BeautifulSoup for HTML parsing,
@@ -95,11 +115,18 @@ and transformed into analysis-ready data.
 Follow the [Professional Python Workflow Guide](https://denisecase.github.io/pro-analytics-02/)
 to set up your machine and project environment.
 
+For nlp-05-web-documents-custom, Booktore website (https://books.toscrape.com/).
+
 From a VS Code terminal in the project root:
 
 ```shell
 uv run python -m nlp.pipeline_web_html
 ```
+
+```shell
+uv run python -m nlp.mrutu_pipeline_web_html
+```
+
 
 ## Results
 
@@ -120,11 +147,18 @@ Pipeline executed successfully!
 ========================
 ```
 
-The following files are created:
+The following files are created for the example:
 
 - `project.log` - pipeline execution log.
 - `data/raw/case_raw.html` - original HTML document.
 - `data/processed/case_processed.csv` - extracted and transformed data.
+
+The following files are created for the assignemnet (nlp-05-web-documentation-custom) :
+- `project.log` - pipeline execution log.
+- `data/raw/mrutu_raw.html` - original HTML document.
+- `data/processed/mrutu_processed.csv` - extracted and transformed data.
+- `data/processed/book_title_wordcloud.png` - visual
+- `data/processed/rating_distribution.png` - visual
 
 These artifacts provide evidence of successful
 HTML acquisition, validation, transformation, and persistence.
@@ -243,3 +277,19 @@ testing, documentation, and code quality.
 - [Professional Python Workflow Guide](https://denisecase.github.io/pro-analytics-02/)
 - [Citation](CITATION.cff)
 - [License](LICENSE)
+
+## Visualization
+![book_title_wordcloud.png](image.png)
+![rating_distribution.png](image.png)
+
+
+## Data Insight
+### Project Data Insights
+
+This project demonstrated how to build an EVTL (Extract, Validate, Transform, Load) pipeline to collect and analyze book information from the Books to Scrape website. The pipeline successfully extracted book titles, prices, ratings, and availability from HTML pages using BeautifulSoup and transformed the data into a structured dataset for analysis.
+
+The rating distribution analysis revealed which rating categories were most common among the books listed on the website, providing insight into the overall quality distribution of the catalog. By comparing prices across ratings, it was possible to explore whether highly rated books tended to be priced differently than lower-rated books.
+
+A Word Cloud generated from book titles highlighted frequently occurring words and themes, making it easier to identify common topics and patterns within the collection. This visualization provided a quick overview of recurring keywords that would be difficult to recognize from tabular data alone.
+
+Overall, the addition of visualizations improved data interpretation by presenting trends and patterns in a clear and intuitive manner. The project illustrated how web scraping, data transformation, and visualization can work together to convert unstructured web content into meaningful analytical insights.
