@@ -279,8 +279,8 @@ testing, documentation, and code quality.
 - [License](LICENSE)
 
 ## Visualization
-![book_title_wordcloud.png](image.png)
-![rating_distribution.png](image.png)
+![Word Cloud for Book Titles](data/processed/book_title_wordcloud.png)
+![Rating Ditribution](data/processed/rating_distribution.png)
 
 
 ## Data Insight
