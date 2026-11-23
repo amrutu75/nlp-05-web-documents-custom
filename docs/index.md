@@ -5,7 +5,7 @@ Web Mining and Applied NLP | Project 05 | Report
 Agnes Mrutu | November 2026| Report for nlp-05-web-documents-custom
 
 ## Document and source URL
-https://books.toscrape.com/
+[Books to Scrape](https://books.toscrape.com/)
 .
 
 ## Tools and Methods
