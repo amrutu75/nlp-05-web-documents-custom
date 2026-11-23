@@ -106,7 +106,7 @@ using a reproducible pipeline.
 
 Follow [Workflow E: Finalize Project](https://denisecase.github.io/pro-analytics-02/workflow-e-finalize/).
 
-Use `docs/index.md` to report:
+Use `docs/Books.md` to report:
 
 - Selected document and source URL.
 - Information selected for extraction.
@@ -133,4 +133,4 @@ Include a clickable link to your repository and artifacts.
 
 ---
 
-[◄ Back to Home](index.md)
+[◄ Back to Home](Books.md)

@@ -52,7 +52,7 @@ The pipeline preserves the original HTML
 and produces a structured CSV dataset
 containing extracted metadata.
 
-For the actual assignment, data is retrived from Booktore website (https://books.toscrape.com/).
+For the actual assignment, data is retrived from Bookstore website (https://books.toscrape.com/).
 The website (source document) containes information such as:
 - Book title
 - Price
