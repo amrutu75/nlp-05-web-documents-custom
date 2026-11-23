@@ -53,9 +53,9 @@ Field extracted:
 - Availability
 - Generated Analytical Visulaization
 
-![Word Cloud for Book Titles](data/processed/book_title_wordcloud.png)
+![Word Cloud for Book Titles][imageWordCloud]
 
-![Rating Ditribution](data/processed/rating_distribution.png)
+![Rating Distribution][imageRatingDistribution]
 
 
 ### Project Data Insights
