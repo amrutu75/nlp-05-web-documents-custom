@@ -51,11 +51,11 @@ Field extracted:
 - Price
 - Rating
 - Availability
-- Generated Analytical Visulaization
+- Generated Analytical Visualization
 
-![Word Cloud for Book Titles][imageWordCloud]
+![Word Cloud](data/processed/book_title_wordcloud.png)
+![Word Cloud](data/processed/rating_distribution.png)
 
-![Rating Distribution][imageRatingDistribution]
 
 
 ### Project Data Insights
